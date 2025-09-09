@@ -13,7 +13,7 @@ app.innerHTML = `
         <a href="/about.html" class="hover:text-blue-600 transition">About</a>
         <a href="#benefits" class="hover:text-blue-600 transition">Benefits</a>
         <a href="#roadmap" class="hover:text-blue-600 transition">Roadmap</a>
-        <a href="#contact" class="hover:text-blue-600 transition">Contact</a>
+        <a href="/contact.html" class="hover:text-blue-600 transition">Contact</a>
       </nav>
     </div>
   </header>
