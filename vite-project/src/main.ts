@@ -1,9 +1,4 @@
 import "./style.css";
-import createNavbar from "./navbar";
-import createFooter from "./footer";
-
-const navbar = createNavbar();
-document.body.prepend(navbar);
 
 const app = document.querySelector<HTMLDivElement>("#app")!;
 
@@ -98,13 +93,9 @@ mainContent.innerHTML = `
       </a>
     </div>
   </section>
-
 `;
 
 app.appendChild(mainContent);
-
-const footer = createFooter();
-document.body.appendChild(footer);
 
 // simple UI-only handler for the form (no backend yet)
 const form = document.getElementById("waitlist-form") as HTMLFormElement | null;
