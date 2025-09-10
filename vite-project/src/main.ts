@@ -1,23 +1,13 @@
 import "./style.css";
+import createNavbar from "./navbar";
 
 const app = document.querySelector<HTMLDivElement>("#app")!;
 
-app.innerHTML = `
-  <!-- NAVBAR -->
-  <header class="bg-white/70 backdrop-blur-md shadow sticky top-0 z-50">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between">
-      <a href="#" class="text-xl sm:text-2xl font-extrabold tracking-tight text-blue-600">
-        Murafi Technologies
-      </a>
-      <nav class="flex items-center gap-6 text-sm font-medium">
-        <a href="about.html" class="hover:text-blue-600 transition">About</a>
-        <a href="#benefits" class="hover:text-blue-600 transition">Benefits</a>
-        <a href="#roadmap" class="hover:text-blue-600 transition">Roadmap</a>
-        <a href="contact.html" class="hover:text-blue-600 transition">Contact</a>
-      </nav>
-    </div>
-  </header>
+const navbar = createNavbar();
+app.prepend(navbar);
 
+const mainContent = document.createElement("main");
+mainContent.innerHTML = `
   <!-- HERO -->
   <section class="relative overflow-hidden">
     <div class="absolute inset-0 bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-700"></div>
@@ -115,6 +105,8 @@ app.innerHTML = `
     </div>
   </footer>
 `;
+
+app.appendChild(mainContent);
 
 // simple UI-only handler for the form (no backend yet)
 const form = document.getElementById("waitlist-form") as HTMLFormElement | null;
