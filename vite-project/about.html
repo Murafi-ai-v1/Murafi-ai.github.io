@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About Us — Murafi Technologies</title>
-    <link rel="stylesheet" href="/src/style.css" />
+    <link rel="stylesheet" href="./src/style.css" />
   </head>
   <body class="bg-gray-50 text-gray-900">
     <!-- NAVBAR -->
@@ -13,142 +13,199 @@
         class="max-w-7xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between"
       >
         <a
-          href="/"
+          href="./index.html"
           class="text-xl sm:text-2xl font-extrabold tracking-tight text-blue-600"
         >
           Murafi Technologies
         </a>
+        <!-- Desktop Menu -->
         <nav class="hidden md:flex items-center gap-6 text-sm font-medium">
-          <a href="/about.html" class="text-blue-600 transition">About</a>
-          <a href="/index.html#benefits" class="hover:text-blue-600 transition">Benefits</a>
-          <a href="/index.html#roadmap" class="hover:text-blue-600 transition">Roadmap</a>
-          <a href="/contact.html" class="hover:text-blue-600 transition">Contact</a>
+          <a href="./about.html" class="text-blue-600 transition">About</a>
+          <a href="./index.html#benefits" class="hover:text-blue-600 transition"
+            >Benefits</a
+          >
+          <a href="./index.html#roadmap" class="hover:text-blue-600 transition"
+            >Roadmap</a
+          >
+          <a href="./contact.html" class="hover:text-blue-600 transition"
+            >Contact</a
+          >
+        </nav>
+        <!-- Mobile Menu Button -->
+        <div class="md:hidden">
+          <button id="menu-btn" class="p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
+      </div>
+       <!-- Mobile Menu -->
+      <div id="mobile-menu" class="hidden md:hidden pb-4">
+        <nav class="flex flex-col items-center gap-4 text-sm font-medium">
+           <a href="./about.html" class="text-blue-600 transition">About</a>
+          <a href="./index.html#benefits" class="hover:text-blue-600 transition"
+            >Benefits</a
+          >
+          <a href="./index.html#roadmap" class="hover:text-blue-600 transition"
+            >Roadmap</a
+          >
+          <a href="./contact.html" class="hover:text-blue-600 transition"
+            >Contact</a
+          >
         </nav>
       </div>
     </header>
 
-    <!-- HERO -->
-    <section class="relative overflow-hidden">
-      <div
-        class="absolute inset-0 bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-700"
-      ></div>
-      <div
-        class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 py-20 sm:py-28 text-center text-white"
-      >
-        <h1 class="text-3xl sm:text-5xl font-extrabold leading-tight mb-6">
-          About Us
-        </h1>
-        <p class="max-w-2xl mx-auto text-base sm:text-lg text-blue-100 mb-8">
-          Learn more about Murafi Technologies and our journey.
-        </p>
-      </div>
-    </section>
-
-    <!-- WHO WE ARE -->
-    <section class="py-16 sm:py-20 max-w-6xl mx-auto px-4 sm:px-6">
-      <div class="max-w-3xl mx-auto">
-        <h2 class="text-2xl sm:text-3xl font-bold mb-6 text-gray-900 text-center">
-          Who We Are
-        </h2>
-        <p class="text-gray-600 leading-relaxed text-sm sm:text-base">
-          Murafi Technologies is a forward-thinking technology company focused
-          on building Murafi AI — a modern AI assistant that blends
-          intelligence, simplicity, and accessibility. We are passionate about
-          making AI tools practical and reliable for individuals and businesses
-          alike.
-        </p>
-      </div>
-    </section>
-
-    <!-- OUR VISION -->
-    <section class="py-16 sm:py-20 bg-gray-100">
-      <div class="max-w-6xl mx-auto px-4 sm:px-6">
-        <div class="max-w-3xl mx-auto text-center">
-          <h2 class="text-2xl sm:text-3xl font-bold mb-6 text-gray-900">
-            Our Vision
-          </h2>
-          <p class="text-gray-600 leading-relaxed text-sm sm:text-base">
-            To create AI solutions that empower people to achieve more with less
-            effort, while keeping transparency, privacy, and innovation at the
-            center.
+    <main>
+      <!-- HERO -->
+      <section class="relative overflow-hidden">
+        <div
+          class="absolute inset-0 bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-700"
+        ></div>
+        <div
+          class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 py-20 sm:py-28 text-center text-white"
+        >
+          <h1 class="text-3xl sm:text-5xl font-extrabold leading-tight mb-6">
+            About Us
+          </h1>
+          <p class="max-w-2xl mx-auto text-base sm:text-lg text-blue-100 mb-8">
+            Learn more about Murafi Technologies and our journey.
           </p>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- OUR MISSION -->
-    <section class="py-16 sm:py-20 max-w-6xl mx-auto px-4 sm:px-6">
-      <div class="max-w-3xl mx-auto text-center">
-        <h2 class="text-2xl sm:text-3xl font-bold mb-10 text-gray-900">
-          Our Mission
-        </h2>
-        <div class="grid gap-6 sm:gap-8 md:grid-cols-3 text-left">
-          <div
-            class="p-6 sm:p-8 bg-white rounded-2xl shadow hover:shadow-lg transition"
+      <!-- WHO WE ARE -->
+      <section class="py-16 sm:py-20 max-w-6xl mx-auto px-4 sm:px-6">
+        <div class="max-w-3xl mx-auto">
+          <h2
+            class="text-2xl sm:text-3xl font-bold mb-6 text-gray-900 text-center"
           >
-            <h3 class="text-base sm:text-lg font-semibold mb-2 text-blue-600">
-              Build cutting-edge AI tools
-            </h3>
-            <p class="text-gray-600 text-sm sm:text-base">
-              Accessible to everyone.
-            </p>
-          </div>
-          <div
-            class="p-6 sm:p-8 bg-white rounded-2xl shadow hover:shadow-lg transition"
-          >
-            <h3 class="text-base sm:text-lg font-semibold mb-2 text-blue-600">
-              Provide real value
-            </h3>
-            <p class="text-gray-600 text-sm sm:text-base">
-              Through automation and intelligence.
-            </p>
-          </div>
-          <div
-            class="p-6 sm:p-8 bg-white rounded-2xl shadow hover:shadow-lg transition"
-          >
-            <h3 class="text-base sm:text-lg font-semibold mb-2 text-blue-600">
-              Continuously improve
-            </h3>
-            <p class="text-gray-600 text-sm sm:text-base">
-              To adapt to the needs of the future.
-            </p>
-          </div>
+            Who We Are
+          </h2>
+          <p class="text-gray-600 leading-relaxed text-sm sm:text-base">
+            Murafi Technologies is a forward-thinking technology company focused
+            on building Murafi AI — a modern AI assistant that blends
+            intelligence, simplicity, and accessibility. We are passionate about
+            making AI tools practical and reliable for individuals and
+            businesses alike.
+          </p>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- OUR STORY -->
-    <section class="py-16 sm:py-20 bg-gray-100">
+      <!-- OUR VISION -->
+      <section class="py-16 sm:py-20 bg-gray-100">
         <div class="max-w-6xl mx-auto px-4 sm:px-6">
-            <div class="max-w-3xl mx-auto text-center">
-                <h2 class="text-2xl sm:text-3xl font-bold mb-6 text-gray-900">Our Story</h2>
-                <p class="text-gray-600 leading-relaxed text-sm sm:text-base">
-                    Murafi Technologies began as a small initiative to create an AI assistant that isn’t just smart, but also user-friendly and trustworthy. With each version, we’ve moved closer to our mission of delivering AI that truly helps people.
-                </p>
-            </div>
+          <div class="max-w-3xl mx-auto text-center">
+            <h2 class="text-2xl sm:text-3xl font-bold mb-6 text-gray-900">
+              Our Vision
+            </h2>
+            <p class="text-gray-600 leading-relaxed text-sm sm:text-base">
+              To create AI solutions that empower people to achieve more with
+              less effort, while keeping transparency, privacy, and innovation
+              at the center.
+            </p>
+          </div>
         </div>
-    </section>
+      </section>
 
-    <!-- OUR VALUES -->
-    <section class="py-16 sm:py-20 max-w-6xl mx-auto px-4 sm:px-6">
-        <div class="max-w-4xl mx-auto">
-            <h2 class="text-2xl sm:text-3xl font-bold text-center mb-10 text-gray-900">Our Values</h2>
-            <div class="grid gap-6 sm:gap-8 md:grid-cols-3">
-                <div class="p-6 bg-white rounded-xl border shadow hover:shadow-md transition text-center">
-                    <h4 class="font-bold mb-2 text-sm sm:text-base">Innovation</h4>
-                    <p class="text-gray-600 text-xs sm:text-sm">Always looking ahead, experimenting, and improving.</p>
-                </div>
-                <div class="p-6 bg-white rounded-xl border shadow hover:shadow-md transition text-center">
-                    <h4 class="font-bold mb-2 text-sm sm:text-base">Trust</h4>
-                    <p class="text-gray-600 text-xs sm:text-sm">Respecting user privacy and data.</p>
-                </div>
-                <div class="p-6 bg-white rounded-xl border shadow hover:shadow-md transition text-center">
-                    <h4 class="font-bold mb-2 text-sm sm:text-base">Accessibility</h4>
-                    <p class="text-gray-600 text-xs sm:text-sm">Making advanced technology easy for everyone.</p>
-                </div>
+      <!-- OUR MISSION -->
+      <section class="py-16 sm:py-20 max-w-6xl mx-auto px-4 sm:px-6">
+        <div class="max-w-3xl mx-auto text-center">
+          <h2 class="text-2xl sm:text-3xl font-bold mb-10 text-gray-900">
+            Our Mission
+          </h2>
+          <div class="grid gap-6 sm:gap-8 md:grid-cols-3 text-left">
+            <div
+              class="p-6 sm:p-8 bg-white rounded-2xl shadow hover:shadow-lg transition"
+            >
+              <h3 class="text-base sm:text-lg font-semibold mb-2 text-blue-600">
+                Build cutting-edge AI tools
+              </h3>
+              <p class="text-gray-600 text-sm sm:text-base">
+                Accessible to everyone.
+              </p>
             </div>
+            <div
+              class="p-6 sm:p-8 bg-white rounded-2xl shadow hover:shadow-lg transition"
+            >
+              <h3 class="text-base sm:text-lg font-semibold mb-2 text-blue-600">
+                Provide real value
+              </h3>
+              <p class="text-gray-600 text-sm sm:text-base">
+                Through automation and intelligence.
+              </p>
+            </div>
+            <div
+              class="p-6 sm:p-8 bg-white rounded-2xl shadow hover:shadow-lg transition"
+            >
+              <h3 class="text-base sm:text-lg font-semibold mb-2 text-blue-600">
+                Continuously improve
+              </h3>
+              <p class="text-gray-600 text-sm sm:text-base">
+                To adapt to the needs of the future.
+              </p>
+            </div>
+          </div>
         </div>
-    </section>
+      </section>
+
+      <!-- OUR STORY -->
+      <section class="py-16 sm:py-20 bg-gray-100">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6">
+          <div class="max-w-3xl mx-auto text-center">
+            <h2 class="text-2xl sm:text-3xl font-bold mb-6 text-gray-900">
+              Our Story
+            </h2>
+            <p class="text-gray-600 leading-relaxed text-sm sm:text-base">
+              Murafi Technologies began as a small initiative to create an AI
+              assistant that isn’t just smart, but also user-friendly and
+              trustworthy. With each version, we’ve moved closer to our mission
+              of delivering AI that truly helps people.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- OUR VALUES -->
+      <section class="py-16 sm:py-20 max-w-6xl mx-auto px-4 sm:px-6">
+        <div class="max-w-4xl mx-auto">
+          <h2
+            class="text-2xl sm:text-3xl font-bold text-center mb-10 text-gray-900"
+          >
+            Our Values
+          </h2>
+          <div class="grid gap-6 sm:gap-8 md:grid-cols-3">
+            <div
+              class="p-6 bg-white rounded-xl border shadow hover:shadow-md transition text-center"
+            >
+              <h4 class="font-bold mb-2 text-sm sm:text-base">Innovation</h4>
+              <p class="text-gray-600 text-xs sm:text-sm">
+                Always looking ahead, experimenting, and improving.
+              </p>
+            </div>
+            <div
+              class="p-6 bg-white rounded-xl border shadow hover:shadow-md transition text-center"
+            >
+              <h4 class="font-bold mb-2 text-sm sm:text-base">Trust</h4>
+              <p class="text-gray-600 text-xs sm:text-sm">
+                Respecting user privacy and data.
+              </p>
+            </div>
+            <div
+              class="p-6 bg-white rounded-xl border shadow hover:shadow-md transition text-center"
+            >
+              <h4 class="font-bold mb-2 text-sm sm:text-base">
+                Accessibility
+              </h4>
+              <p class="text-gray-600 text-xs sm:text-sm">
+                Making advanced technology easy for everyone.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
 
     <!-- FOOTER -->
     <footer class="bg-white border-t">
@@ -158,5 +215,6 @@
         © 2025 Murafi Technologies. All rights reserved.
       </div>
     </footer>
+    <script type="module" src="./src/main.ts"></script>
   </body>
 </html>

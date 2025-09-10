@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Us — Murafi Technologies</title>
-    <link rel="stylesheet" href="/src/style.css" />
+    <link rel="stylesheet" href="./src/style.css" />
   </head>
   <body class="bg-gray-50 text-gray-900">
     <!-- NAVBAR -->
@@ -13,73 +13,120 @@
         class="max-w-7xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between"
       >
         <a
-          href="/"
+          href="./index.html"
           class="text-xl sm:text-2xl font-extrabold tracking-tight text-blue-600"
         >
           Murafi Technologies
         </a>
+        <!-- Desktop Menu -->
         <nav class="hidden md:flex items-center gap-6 text-sm font-medium">
-          <a href="/about.html" class="hover:text-blue-600 transition">About</a>
-          <a href="/index.html#benefits" class="hover:text-blue-600 transition">Benefits</a>
-          <a href="/index.html#roadmap" class="hover:text-blue-600 transition">Roadmap</a>
-          <a href="/contact.html" class="text-blue-600 transition">Contact</a>
+          <a href="./about.html" class="hover:text-blue-600 transition"
+            >About</a
+          >
+          <a
+            href="./index.html#benefits"
+            class="hover:text-blue-600 transition"
+            >Benefits</a
+          >
+          <a
+            href="./index.html#roadmap"
+            class="hover:text-blue-600 transition"
+            >Roadmap</a
+          >
+          <a href="./contact.html" class="text-blue-600 transition"
+            >Contact</a
+          >
+        </nav>
+        <!-- Mobile Menu Button -->
+        <div class="md:hidden">
+          <button id="menu-btn" class="p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
+      </div>
+       <!-- Mobile Menu -->
+      <div id="mobile-menu" class="hidden md:hidden pb-4">
+        <nav class="flex flex-col items-center gap-4 text-sm font-medium">
+           <a href="./about.html" class="hover:text-blue-600 transition"
+            >About</a
+          >
+          <a
+            href="./index.html#benefits"
+            class="hover:text-blue-600 transition"
+            >Benefits</a
+          >
+          <a
+            href="./index.html#roadmap"
+            class="hover:text-blue-600 transition"
+            >Roadmap</a
+          >
+          <a href="./contact.html" class="text-blue-600 transition"
+            >Contact</a
+          >
         </nav>
       </div>
     </header>
 
-    <!-- HERO -->
-    <section class="relative overflow-hidden">
-      <div
-        class="absolute inset-0 bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-700"
-      ></div>
-      <div
-        class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 py-20 sm:py-28 text-center text-white"
-      >
-        <h1 class="text-3xl sm:text-5xl font-extrabold leading-tight mb-6">
-          Contact Us
-        </h1>
-        <p class="max-w-2xl mx-auto text-base sm:text-lg text-blue-100 mb-8">
-          We’d love to hear from you.
-        </p>
-      </div>
-    </section>
-
-    <!-- GET IN TOUCH -->
-    <section class="py-16 sm:py-20 max-w-6xl mx-auto px-4 sm:px-6">
-      <div class="max-w-3xl mx-auto text-center">
-        <h2 class="text-2xl sm:text-3xl font-bold mb-6 text-gray-900">
-          Get in Touch
-        </h2>
-        <p class="text-gray-600 leading-relaxed text-sm sm:text-base">
-          We’d love to hear from you. Whether you have questions, feedback, or
-          ideas, the Murafi Technologies team is here to listen.
-        </p>
-      </div>
-    </section>
-
-    <!-- CONTACT EMAIL -->
-    <section class="py-16 sm:py-20 bg-gray-100">
-      <div class="max-w-6xl mx-auto px-4 sm:px-6">
-        <div class="max-w-3xl mx-auto text-center">
-          <h2 class="text-2xl sm:text-3xl font-bold mb-6 text-gray-900">
-            Contact Email
-          </h2>
-          <p class="text-gray-600 leading-relaxed text-sm sm:text-base">
-            📧 support@murafi.tech
+    <main>
+      <!-- HERO -->
+      <section class="relative overflow-hidden">
+        <div
+          class="absolute inset-0 bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-700"
+        ></div>
+        <div
+          class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 py-20 sm:py-28 text-center text-white"
+        >
+          <h1 class="text-3xl sm:text-5xl font-extrabold leading-tight mb-6">
+            Contact Us
+          </h1>
+          <p class="max-w-2xl mx-auto text-base sm:text-lg text-blue-100 mb-8">
+            We’d love to hear from you.
           </p>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- CUSTOMER SUPPORT -->
-    <section class="py-16 sm:py-20 max-w-6xl mx-auto px-4 sm:px-6">
+      <!-- GET IN TOUCH -->
+      <section class="py-16 sm:py-20 max-w-6xl mx-auto px-4 sm:px-6">
         <div class="max-w-3xl mx-auto text-center">
-            <h2 class="text-2xl sm:text-3xl font-bold mb-6 text-gray-900">Customer Support</h2>
-            <p class="text-gray-600 leading-relaxed text-sm sm:text-base">
-                Our support team is available to assist you with any issues, product guidance, or general inquiries.
-            </p>
+          <h2 class="text-2xl sm:text-3xl font-bold mb-6 text-gray-900">
+            Get in Touch
+          </h2>
+          <p class="text-gray-600 leading-relaxed text-sm sm:text-base">
+            We’d love to hear from you. Whether you have questions, feedback, or
+            ideas, the Murafi Technologies team is here to listen.
+          </p>
         </div>
-    </section>
+      </section>
+
+      <!-- CONTACT EMAIL -->
+      <section class="py-16 sm:py-20 bg-gray-100">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6">
+          <div class="max-w-3xl mx-auto text-center">
+            <h2 class="text-2xl sm:text-3xl font-bold mb-6 text-gray-900">
+              Contact Email
+            </h2>
+            <p class="text-gray-600 leading-relaxed text-sm sm:text-base">
+              📧 support@murafi.tech
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- CUSTOMER SUPPORT -->
+      <section class="py-16 sm:py-20 max-w-6xl mx-auto px-4 sm:px-6">
+        <div class="max-w-3xl mx-auto text-center">
+          <h2 class="text-2xl sm:text-3xl font-bold mb-6 text-gray-900">
+            Customer Support
+          </h2>
+          <p class="text-gray-600 leading-relaxed text-sm sm:text-base">
+            Our support team is available to assist you with any issues,
+            product guidance, or general inquiries.
+          </p>
+        </div>
+      </section>
+    </main>
 
     <!-- FOOTER -->
     <footer class="bg-white border-t">
@@ -89,5 +136,6 @@
         © 2025 Murafi Technologies. All rights reserved.
       </div>
     </footer>
+    <script type="module" src="./src/main.ts"></script>
   </body>
 </html>
