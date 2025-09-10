@@ -9,11 +9,11 @@ app.innerHTML = `
       <a href="#" class="text-xl sm:text-2xl font-extrabold tracking-tight text-blue-600">
         Murafi Technologies
       </a>
-      <nav class="hidden md:flex items-center gap-6 text-sm font-medium">
-        <a href="/about.html" class="hover:text-blue-600 transition">About</a>
+      <nav class="flex items-center gap-6 text-sm font-medium">
+        <a href="about.html" class="hover:text-blue-600 transition">About</a>
         <a href="#benefits" class="hover:text-blue-600 transition">Benefits</a>
         <a href="#roadmap" class="hover:text-blue-600 transition">Roadmap</a>
-        <a href="/contact.html" class="hover:text-blue-600 transition">Contact</a>
+        <a href="contact.html" class="hover:text-blue-600 transition">Contact</a>
       </nav>
     </div>
   </header>
