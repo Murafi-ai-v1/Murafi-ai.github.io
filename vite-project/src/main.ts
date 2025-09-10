@@ -1,10 +1,11 @@
 import "./style.css";
 import createNavbar from "./navbar";
-
-const app = document.querySelector<HTMLDivElement>("#app")!;
+import createFooter from "./footer";
 
 const navbar = createNavbar();
-app.prepend(navbar);
+document.body.prepend(navbar);
+
+const app = document.querySelector<HTMLDivElement>("#app")!;
 
 const mainContent = document.createElement("main");
 mainContent.innerHTML = `
@@ -98,15 +99,12 @@ mainContent.innerHTML = `
     </div>
   </section>
 
-  <!-- FOOTER -->
-  <footer class="bg-white border-t">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 py-6 text-center text-gray-600 text-xs sm:text-sm">
-      © 2025 Murafi Technologies. All rights reserved.
-    </div>
-  </footer>
 `;
 
 app.appendChild(mainContent);
+
+const footer = createFooter();
+document.body.appendChild(footer);
 
 // simple UI-only handler for the form (no backend yet)
 const form = document.getElementById("waitlist-form") as HTMLFormElement | null;
