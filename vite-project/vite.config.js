@@ -2,7 +2,7 @@ import { defineConfig } from 'vite'
 import { resolve } from 'path'
 
 export default defineConfig({
-  base: '/vite-project/',
+  base: '/',  // ✅ correct for custom domain
   build: {
     rollupOptions: {
       input: {
